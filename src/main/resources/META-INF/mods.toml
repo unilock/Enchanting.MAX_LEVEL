@@ -17,7 +17,7 @@ logoFile="icon.png" #optional
 authors="unilock"
 # A multi-line description for your mod. This has no minimum length, but it *is* required!
 description = '''
-enchantment levels above 255. up to 2,147,483,647, in fact!
+enchantment levels beyond 255. up to 2,147,483,647, in fact!
 (only accessible via "/give ...{[Enchantments:{id:...,lvl:...}]}")
 (...for now!)
 '''
