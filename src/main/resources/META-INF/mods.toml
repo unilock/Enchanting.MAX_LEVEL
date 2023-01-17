@@ -1,0 +1,37 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+license = "MIT"
+
+[[mods]]
+modId = "enchantingmaxvalue"
+# The version number of the mod - unlike in the Forge MDK,
+# we'll use the processResources task to replace this for us
+version = "${version}"
+displayName = "Enchanting.MAX_VALUE"
+# This URL will be queried by the Forge update checker in order to find the latest version of your mod.
+# If an update is found, you'll see a little blinking "emerald" symbol on your Mods button!
+# updateJSONURL="https://changeme.dev/updates.json" #optional
+# This is your mod's "homepage" and will be displayed on the mod's information screen in the Mods panel.
+# displayURL="https://changeme.dev/" #optional
+logoFile="icon.png" #optional
+authors="unilock"
+# A multi-line description for your mod. This has no minimum length, but it *is* required!
+description = '''
+enchantment levels above 255. up to 2,147,483,647, in fact!
+(only accessible via "/give ...{[Enchantments:{id:...,lvl:...}]}")
+(...for now!)
+'''
+
+[[dependencies.enchantingmaxvalue]]
+modId = "forge"
+mandatory = true
+versionRange = "[40,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.enchantingmaxvalue]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "NONE"
+side = "BOTH"
